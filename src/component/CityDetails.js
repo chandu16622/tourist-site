@@ -3,8 +3,7 @@ import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
-// Import city and place images
-// import visakhapatnam from "../images/visakhapatnam.jpg";
+
 import tirupathi from "../images/tirupathi.jpg";
 import srikakulam from "../images/srikakulam.jpg";
 import araku from "../images/araku.jpg";
@@ -12,8 +11,7 @@ import vijayawada from "../images/vijayawada.jpg";
 import godavari from "../images/godavari.jpg";
 import vijayanagaram from "../images/vijayanagaram.jpg";
 import kadapa from "../images/kadapa.jpg";
-// import RKBeach from "../images/RK_Beach.jpg";
-// import YaradaBeach from "../images/Yarada Beach.jpg";
+
 import visakhapatnam from "../images/visakhapatnam.jpg";
 import RKBeach from "../images/RK_Beach.jpg";
 import YaradaBeach from "../images/yaradabeach.jpg";
@@ -46,7 +44,7 @@ import AnanthagiriHills from "../images/AnanthagiriHills.jpg";
 import PadmapuramGardens from "../images/PadmapuramGardens.jpg";
 import TribalMuseum from "../images/TribalMuseum.jpg";
 import ChaparaiWaterfalls from "../images/ChaparaiWaterfalls.jpg";
-import PadmapuramTrek from "../images/PadmapuramTrek.jpg";  // ... existing imports ...
+import PadmapuramTrek from "../images/PadmapuramTrek.jpg";  
 
 
 import KanakaDurga from "../images/KanakaDurgaTemple.jpg";

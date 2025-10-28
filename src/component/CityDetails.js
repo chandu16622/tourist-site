@@ -48,7 +48,7 @@ import TribalMuseum from "../images/TribalMuseum.jpg";
 import ChaparaiWaterfalls from "../images/ChaparaiWaterfalls.jpg";
 import PadmapuramTrek from "../images/PadmapuramTrek.jpg";  // ... existing imports ...
 
-// Import Vijayawada Place Images
+
 import KanakaDurga from "../images/KanakaDurgaTemple.jpg";
 import BhavaniIsland from "../images/BhavaniIsland.jpg";
 import PrakasamBarrage from "../images/PrakasamBarrage.jpg";
@@ -77,7 +77,7 @@ import GovindapuramHill from "../images/GovindapuramHill.jpg";
 import VizianagaramMuseum from "../images/VizianagaramMuseum.jpg";
 import Pydithalliammavaru from "../images/Pydithalliammavaru.jpg";
 
-// Add these imports to the list at the top of CityDetails.js
+
 import GandikotaFort from "../images/GandikotaFort.jpg";
 import BelumCaves from "../images/BelumCaves.jpg";
 import AmeenPeerDargah from "../images/AmeenPeerDargah.jpg";

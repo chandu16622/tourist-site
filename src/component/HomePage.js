@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import visakhapatnam from "../images/visakhapatnam.jpg";
@@ -19,7 +19,7 @@ function HomePage() {
       id: 1,
       name: "Visakhapatnam",
       img: visakhapatnam,
-      brief: `Visakhapatnam, often called the Jewel of the East Coast, is Andhra Pradesh’s largest city and a major seaport. 
+      brief: `Visakhapatnam, often called the Jewel of the East Coast, is Andhra Pradesh's largest city and a major seaport. 
 It offers a blend of natural beauty and modern infrastructure, with golden beaches, lush green hills, and scenic drives. 
 The iconic RK Beach is perfect for sunrise walks, while Kailasagiri provides panoramic views of the coastline. 
 INS Kurusura Submarine Museum is one of the few submarine museums in the world. 
@@ -28,7 +28,7 @@ Simhachalam Temple, an ancient architectural marvel, draws devotees from across 
 The city is also known for its clean environment and calm lifestyle. 
 Tourists love the Araku Valley trip via the scenic Eastern Ghats rail route. 
 Visakhapatnam perfectly balances culture, spirituality, and modernity. 
-It’s a must-visit destination for travelers seeking both relaxation and exploration.`,
+It's a must-visit destination for travelers seeking both relaxation and exploration.`,
     },
     {
       id: 2,
@@ -42,8 +42,8 @@ Chandragiri Fort showcases the historical grandeur of the Vijayanagara Empire.
 Talakona Waterfalls, located nearby, is the highest in Andhra Pradesh and offers breathtaking views. 
 Tirupati also has peaceful forest trails and a calm spiritual atmosphere. 
 The region blends faith, nature, and history in perfect harmony. 
-Local festivals and rituals add color to the city’s spiritual identity. 
-Tirupati’s divine aura and scenic backdrop make it a soul-refreshing experience.`,
+Local festivals and rituals add color to the city's spiritual identity. 
+Tirupati's divine aura and scenic backdrop make it a soul-refreshing experience.`,
     },
     {
       id: 3,
@@ -54,18 +54,18 @@ The Arasavalli Sun Temple, dedicated to the Sun God, is one of the oldest of its
 Srikurmam Temple, shaped like a tortoise, is unique in its architecture and mythology. 
 Kalingapatnam Beach and Baruva Beach offer tranquility away from crowds. 
 The Salihundam Buddhist site displays ancient stupas and relics, symbolizing centuries-old Buddhist influence. 
-The Nagavali River enhances the district’s scenic charm. 
+The Nagavali River enhances the district's scenic charm. 
 The area also features green paddy fields and coconut plantations. 
-Srikakulam’s calm and cultural vibe makes it ideal for those who love heritage and peace. 
-The craftsmanship of local artisans and handloom products reflects the town’s creativity. 
-It’s a beautiful blend of spirituality, nature, and tradition.`,
+Srikakulam's calm and cultural vibe makes it ideal for those who love heritage and peace. 
+The craftsmanship of local artisans and handloom products reflects the town's creativity. 
+It's a beautiful blend of spirituality, nature, and tradition.`,
     },
     {
       id: 4,
       name: "Araku Valley",
       img: araku,
-      brief: `Araku Valley, located in the Eastern Ghats, is Andhra Pradesh’s most famous hill station. 
-Surrounded by coffee plantations and misty hills, it is often called the “Ooty of Andhra.” 
+      brief: `Araku Valley, located in the Eastern Ghats, is Andhra Pradesh's most famous hill station. 
+Surrounded by coffee plantations and misty hills, it is often called the "Ooty of Andhra." 
 The Borra Caves nearby are natural wonders formed over a million years ago. 
 Katiki Waterfalls and Ananthagiri Hills offer thrilling trekking and sightseeing experiences. 
 The valley is home to tribal communities that maintain rich traditions and cultural dances. 
@@ -82,34 +82,34 @@ Araku is a paradise for nature enthusiasts and photographers alike.`,
       brief: `Vijayawada, situated on the banks of the Krishna River, is known as the business capital of Andhra Pradesh. 
 It is home to the renowned Kanaka Durga Temple atop Indrakeeladri Hill. 
 Prakasam Barrage across the Krishna River offers a breathtaking sight, especially at night. 
-Bhavani Island is one of India’s largest river islands and a hub for water sports. 
+Bhavani Island is one of India's largest river islands and a hub for water sports. 
 Undavalli Caves, carved out of sandstone, showcase ancient Indian rock-cut architecture. 
 The city has a mix of religious, cultural, and modern attractions. 
 Mangalagiri Temple nearby is an important pilgrimage site. 
-The Krishna River adds life and greenery to the city’s surroundings. 
+The Krishna River adds life and greenery to the city's surroundings. 
 Vijayawada is also famous for spicy Andhra cuisine and warm hospitality. 
-It’s a lively city blending devotion, business, and leisure.`,
+It's a lively city blending devotion, business, and leisure.`,
     },
     {
       id: 6,
       name: "Godavari",
       img: godavari,
-      brief: `The Godavari region, often referred to as the “Rice Bowl of Andhra,” is a land of rivers, temples, and greenery. 
+      brief: `The Godavari region, often referred to as the "Rice Bowl of Andhra," is a land of rivers, temples, and greenery. 
 Rajahmundry, the cultural heart, sits on the banks of the mighty Godavari River. 
 Papi Hills, with their breathtaking gorges and boat cruises, offer a heavenly view of nature. 
 Dowleswaram Barrage, built by Sir Arthur Cotton, stands as an engineering marvel. 
-Dindi Backwaters resemble Kerala’s charm with coconut groves and houseboats. 
+Dindi Backwaters resemble Kerala's charm with coconut groves and houseboats. 
 The Annavaram Temple on Ratnagiri Hill attracts thousands of devotees every year. 
 Godavari is also famous for its literary heritage and classical dance traditions. 
 Lush paddy fields and river islands define its picturesque landscapes. 
-A trip here is incomplete without enjoying the local fish curry and sweet “pootharekulu.” 
-The region beautifully captures the soul of Andhra’s natural beauty and culture.`,
+A trip here is incomplete without enjoying the local fish curry and sweet "pootharekulu." 
+The region beautifully captures the soul of Andhra's natural beauty and culture.`,
     },
     {
       id: 7,
       name: "Vizianagaram",
       img: vijayanagaram,
-      brief: `Vizianagaram, meaning “City of Victory,” has a rich royal heritage and cultural depth. 
+      brief: `Vizianagaram, meaning "City of Victory," has a rich royal heritage and cultural depth. 
 It was once the seat of the Vizianagaram Kingdom, and the magnificent Vizianagaram Fort still stands tall. 
 Ramatheertham Temple and Thatipudi Reservoir offer scenic and spiritual experiences. 
 The city has contributed immensely to classical music and dance. 
@@ -125,12 +125,12 @@ Vizianagaram perfectly blends heritage, devotion, and serenity.`,
       name: "Kadapa",
       img: kadapa,
       brief: `Kadapa, located in the heart of the Rayalaseema region, is a city of historic forts and natural wonders. 
-Gandikota Fort, known as the “Grand Canyon of India,” is the most breathtaking site with its massive gorge. 
+Gandikota Fort, known as the "Grand Canyon of India," is the most breathtaking site with its massive gorge. 
 Belum Caves, the second-longest caves in India, amaze visitors with stalactite formations. 
 The Ameen Peer Dargah stands as a symbol of communal harmony. 
 Vontimitta Temple showcases Vijayanagara-style architecture. 
-Pushpagiri and Siddhavattam temples reflect the area’s deep-rooted spirituality. 
-Kadapa’s landscape is filled with rocky hills, fertile plains, and ancient monuments. 
+Pushpagiri and Siddhavattam temples reflect the area's deep-rooted spirituality. 
+Kadapa's landscape is filled with rocky hills, fertile plains, and ancient monuments. 
 It offers adventure, history, and devotion in one place. 
 Local cuisine, especially Rayalaseema spice-rich dishes, adds to its allure. 
 Kadapa remains an underrated gem waiting to be fully explored by travelers.`,
@@ -156,13 +156,31 @@ Kadapa remains an underrated gem waiting to be fully explored by travelers.`,
         <Row>
           {cities.map((city) => (
             <Col key={city.id} md={6} lg={4} className="mb-4">
-              <Card className="shadow-lg border-0 rounded-4 hover-card">
+              <Card 
+                className="shadow-lg border-0 rounded-4 hover-card"
+                style={{
+                  transition: "all 0.3s ease-in-out",
+                  cursor: "pointer"
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-10px) scale(1.02)";
+                  e.currentTarget.style.boxShadow = "0 15px 35px rgba(0,0,0,0.3)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0) scale(1)";
+                  e.currentTarget.style.boxShadow = "0 4px 6px rgba(0,0,0,0.1)";
+                }}
+              >
                 <Card.Img
                   variant="top"
                   src={city.img}
                   alt={city.name}
                   className="rounded-top-4"
-                  style={{ height: "220px", objectFit: "cover" }}
+                  style={{ 
+                    height: "220px", 
+                    objectFit: "cover",
+                    transition: "all 0.3s ease"
+                  }}
                 />
                 <Card.Body className="text-center">
                   <Card.Title className="text-primary fw-bold mb-3">
@@ -181,6 +199,17 @@ Kadapa remains an underrated gem waiting to be fully explored by travelers.`,
                   <Button
                     variant="outline-primary"
                     onClick={() => navigate(`/city/${city.id}`)}
+                    style={{
+                      transition: "all 0.3s ease"
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.backgroundColor = "#0d6efd";
+                      e.currentTarget.style.color = "white";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.backgroundColor = "transparent";
+                      e.currentTarget.style.color = "#0d6efd";
+                    }}
                   >
                     View Details
                   </Button>

@@ -1,3 +1,4 @@
+// 
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Navbar, Nav, Container, Button, Row, Col, Card } from "react-bootstrap";
@@ -26,6 +27,37 @@ function LandingPage() {
     { id: 8, name: "Kadapa", img: kadapa },
   ];
 
+  // Video data - you can use YouTube embed links or local video files
+  const videos = [
+    {
+      id: 1,
+      title: "Visakhapatnam Beach Tour",
+      // YouTube embed URL format
+      url: "https://www.youtube.com/embed/mdL9aRlQq1U",
+      // OR use local video file
+      // url: require("../videos/visakhapatnam.mp4"),
+      description: "Explore the beautiful beaches of Vizag"
+    },
+    {
+      id: 2,
+      title: "Araku Valley Journey",
+      url: "https://www.youtube.com/embed/XUOZUYMKa3s",
+      description: "Experience the scenic beauty of Araku"
+    },
+    {
+      id: 3,
+      title: "Tirupathi Temple Visit",
+      url: "https://www.youtube.com/embed/i9KoSHYp6cg",
+      description: "Virtual tour of the sacred temple"
+    },
+    {
+      id: 4,
+      title: "Vijayawada City Life",
+      url: "https://www.youtube.com/embed/sWaBIy3UAD4",
+      description: "Discover the vibrant city culture"
+    }
+  ];
+
   const getNavLinkStyle = (linkName) => ({
     color: hoveredLink === linkName ? "#f8038aff" : "black",
     fontWeight: hoveredLink === linkName ? "bold" : "500",
@@ -35,8 +67,6 @@ function LandingPage() {
 
   return (
     <>
-     
-
       <Navbar
         style={{
           backgroundColor: "white",
@@ -96,7 +126,18 @@ function LandingPage() {
               >
                 Places
               </Nav.Link>
-              {/* Updated Contact Link - Now navigates to separate page */}
+              <Nav.Link
+                href="#videos"
+                style={{
+                  ...getNavLinkStyle("videos"),
+                  fontSize: "1.2rem",
+                  padding: "10px 20px",
+                }}
+                onMouseEnter={() => setHoveredLink("videos")}
+                onMouseLeave={() => setHoveredLink(null)}
+              >
+                Videos
+              </Nav.Link>
               <Nav.Link
                 onClick={() => navigate("/contact")}
                 style={{
@@ -128,6 +169,7 @@ function LandingPage() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
       {/* Hero Section */}
       <section
         id="home"
@@ -188,7 +230,25 @@ function LandingPage() {
             <br />
             From serene beaches to sacred temples and lush green valleys, every
             destination has a story. Start your journey with us and celebrate
-            the joy of travel and discovery.
+            the joy of travel and discovery.We believe every journey tells a story — from the vibrant streets of cities to the quiet charm of hidden villages. Our mission is to help you discover places that aren't just destinations on a map, but memories waiting to happen.
+
+            • 🏖️ Beaches & Coastal Spots
+            Relax along golden shores, enjoy water adventures, and soak in breathtaking sunsets.
+
+
+            • 🏞️ Hill Stations & Nature Escapes
+            Cool weather, waterfalls, trekking trails, and peaceful views to refresh your soul.
+
+            • 🕍 Heritage & Pilgrimage Sites
+            Discover India's culture, temples, history, and age-old traditions that inspire millions.
+
+
+            • 🏙️ Smart Cities & Urban Lifestyle
+            Experience shopping, nightlife, modern attractions, and entertainment for all ages.
+
+
+            • 🌄 Hidden Gems & Offbeat Places
+            Less crowded, more adventure — perfect for explorers who love discovering something new!
           </p>
         </Container>
       </section>
@@ -257,6 +317,75 @@ function LandingPage() {
                     >
                       {place.name}
                     </Card.Title>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </section>
+
+      {/* Videos Section */}
+      <section
+        id="videos"
+        className="py-5"
+        style={{
+          background: "linear-gradient(to bottom, #f5eeb0ff, #fce4ec)",
+        }}
+      >
+        <Container>
+          <h2
+            className="text-center fw-bold mb-5"
+            style={{ color: "#5e33fcff" }}
+          >
+            Travel Videos
+          </h2>
+          <Row>
+            {videos.map((video) => (
+              <Col key={video.id} md={6} lg={6} className="mb-4">
+                <Card className="shadow-lg border-0 rounded-4 h-100">
+                  <Card.Body>
+                    <Card.Title
+                      className="text-center mb-3"
+                      style={{ color: "#d943ffff", fontWeight: "600" }}
+                    >
+                      {video.title}
+                    </Card.Title>
+                    
+                    {/* For YouTube Videos */}
+                    <div
+                      style={{
+                        position: "relative",
+                        paddingBottom: "56.25%", // 16:9 aspect ratio
+                        height: 0,
+                        overflow: "hidden",
+                        borderRadius: "10px",
+                      }}
+                    >
+                      <iframe
+                        src={video.url}
+                        title={video.title}
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          width: "100%",
+                          height: "100%",
+                          border: "none",
+                        }}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+
+                
+
+                    <Card.Text
+                      className="text-center mt-3"
+                      style={{ color: "#004d40" }}
+                    >
+                      {video.description}
+                    </Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
